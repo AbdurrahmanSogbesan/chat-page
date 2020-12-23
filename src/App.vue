@@ -1,5 +1,8 @@
 <template>
-  <div id="app"></div>
+  <div id="app">
+    <div class="sidebar"></div>
+    <div class="chat-section"></div>
+  </div>
 </template>
 
 <script>
