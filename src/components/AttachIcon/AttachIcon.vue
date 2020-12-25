@@ -1,8 +1,8 @@
 <template>
   <div>
     <svg
-      width="24"
-      height="24"
+      :width="width"
+      :height="height"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -33,8 +33,8 @@
           />
         </mask>
         <g mask="url(#mask0)">
-          <g id="&#240;&#159;&#142;&#168; Color">
-            <path id="Base" d="M0 0H24V24H0V0Z" fill="#707C97" />
+          <g>
+            <path id="Base" d="M0 0H24V24H0V0Z" :fill="fill" />
           </g>
         </g>
       </g>
@@ -43,7 +43,22 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    width: {
+      type: Number,
+      default: 24
+    },
+    height: {
+      type: Number,
+      default:24
+    },
+    fill: {
+      type: String,
+      default:'#707C97'
+    }
+  },
+};
 </script>
 
 <style lang="scss" scoped>
