@@ -1,12 +1,18 @@
 @import "./bootstrap-grid.min.css";
 
 @font-face {
-    font-family: 'TT Norms Medium';
-    font-style: normal;
-    font-weight: normal;
-    src: local('TT Norms Medium'), url('../fonts/TTNorms-Medium.woff') format('woff');
+  font-family: "TT Norms Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("TT Norms Medium"),
+    url("../fonts/TTNorms-Medium.woff") format("woff");
 }
 
 html {
-    font-family:'TT Norms Medium';
+  font-family: "TT Norms Medium";
+  width: 100%;
+}
+
+body {
+  margin: 0;
 }
