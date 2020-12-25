@@ -33,7 +33,7 @@ export default {
   left: 0;
   height: 100vh;
   width: 15%;
-  background: #dbafaf;
+  background: #fff;
 
   span {
     font-size: 18px;
