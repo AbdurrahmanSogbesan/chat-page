@@ -15,7 +15,7 @@
   };
 </script>
 
-<style lang="scss" scoped>
+<style lang="css" scoped>
   .sidebar-item {
     font-size: 16px;
     line-height: 19px;
