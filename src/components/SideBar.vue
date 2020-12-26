@@ -3,11 +3,11 @@
     <div>
       <img src="@/assets/img/Mask Group (4).png" alt="" class="image mb-2" />
     </div>
-    <div class="d-flex mb-5"><span>Henry Jabbawockiez</span><ArrowIcon /></div>
+    <div class="d-flex mb-5"><span>Henry Jabbawockiez</span><ArrowIcon class="ml-1"/></div>
     <SideBarItems />
     <div class="log-out">
-      <LogoutIcon />
-      Log Out
+      <LogoutIcon class="mr-4"/>
+      LOG OUT
     </div>
   </div>
 </template>
