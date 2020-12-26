@@ -16,7 +16,7 @@
           fill="#231F20"
         />
         <mask
-          id="mask0"
+          id="maskNotifications"
           mask-type="alpha"
           maskUnits="userSpaceOnUse"
           x="2"
@@ -32,7 +32,7 @@
             fill="white"
           />
         </mask>
-        <g mask="url(#mask0)">
+        <g mask="url(#maskNotifications)">
           <g>
             <rect id="Base" width="24" height="24" fill="#707C97" />
           </g>
@@ -43,8 +43,7 @@
 </template>
 
 <script>
-export default {};
+  export default {};
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>
