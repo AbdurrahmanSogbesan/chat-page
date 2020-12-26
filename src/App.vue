@@ -1,9 +1,7 @@
 <template>
-  <div id="app" class="d-flex align-items-start">
-    <div>
-      <SideBar />
-    </div>
-    <div class="chat-section"></div>
+  <div id="app" class="d-flex">
+    <SideBar />
+    <div class="chat-section align-items-start"></div>
   </div>
 </template>
 
@@ -19,4 +17,7 @@ export default {
 </script>
 
 <style lang="scss">
+.chat-section {
+  width: 100%;
+}
 </style>

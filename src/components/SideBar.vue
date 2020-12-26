@@ -3,10 +3,12 @@
     <div>
       <img src="@/assets/img/Mask Group (4).png" alt="" class="image mb-2" />
     </div>
-    <div class="d-flex mb-5"><span>Henry Jabbawockiez</span><ArrowIcon class="ml-1"/></div>
+    <div class="d-flex mb-5">
+      <span>Henry Jabbawockiez</span><ArrowIcon class="ml-1" />
+    </div>
     <SideBarItems />
     <div class="log-out">
-      <LogoutIcon class="mr-4"/>
+      <LogoutIcon class="mr-4" />
       LOG OUT
     </div>
   </div>
@@ -16,6 +18,7 @@
 import ArrowIcon from "./ArrowIcon/ArrowIcon.vue";
 import LogoutIcon from "./LogoutIcon.vue";
 import SideBarItems from "./SideBarItems.vue";
+
 export default {
   components: {
     ArrowIcon,

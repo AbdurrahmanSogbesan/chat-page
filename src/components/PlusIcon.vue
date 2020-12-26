@@ -16,7 +16,7 @@
           fill="#231F20"
         />
         <mask
-          id="mask0"
+          id="plusicon"
           mask-type="alpha"
           maskUnits="userSpaceOnUse"
           x="4"
@@ -32,8 +32,8 @@
             fill="white"
           />
         </mask>
-        <g mask="url(#mask0)">
-          <g id="&#240;&#159;&#142;&#168; Color" filter="url(#filter1_dd)">
+        <g mask="url(#plusicon)">
+          <g  filter="url(#filter1_dd)">
             <rect id="Base" width="24" height="24" fill="white" />
           </g>
         </g>
