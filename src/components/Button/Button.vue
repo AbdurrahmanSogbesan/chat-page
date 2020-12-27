@@ -1,6 +1,6 @@
 <template>
-  <button class="d-flex align-items-center">
-    <component :is="icon" class="mr-2"></component>
+  <button class="d-flex">
+    <component :is="icon"></component>
     <span>{{ text }}</span>
   </button>
 </template>

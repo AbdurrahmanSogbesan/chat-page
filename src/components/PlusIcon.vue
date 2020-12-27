@@ -1,5 +1,4 @@
 <template>
-  <div>
     <svg
       width="24"
       height="24"
@@ -139,7 +138,6 @@
         </filter>
       </defs>
     </svg>
-  </div>
 </template>
 
 <script>

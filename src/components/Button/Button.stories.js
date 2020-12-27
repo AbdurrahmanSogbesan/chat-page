@@ -1,4 +1,5 @@
 import Button from "./Button.vue";
+import PlusIcon from "../PlusIcon.vue";
 
 export default {
   title: "Buttons/Button",
@@ -18,5 +19,5 @@ const Template = (args, { argTypes }) => ({
 export const Default = Template.bind({});
 Default.args = {
   text: "Create New Chat",
-  icon: {},
+  icon: PlusIcon,
 };
