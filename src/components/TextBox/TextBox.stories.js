@@ -7,6 +7,8 @@ export default {
   argTypes: {
     placeholder: { control: "text" },
     icon: { control: "object" },
+    width: { control: "text" },
+    className: { control: "text" },
   },
 };
 
@@ -19,5 +21,7 @@ const Template = (args, { argTypes }) => ({
 export const Default = Template.bind({});
 Default.args = {
   placeholder: "Search",
-  icon: SearchIcon
+  icon: SearchIcon,
+  width: "399px",
+  className: "",
 };
