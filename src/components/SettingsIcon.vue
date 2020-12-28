@@ -16,7 +16,7 @@
           fill="#231F20"
         />
         <mask
-          id="mask0"
+          id="maskSettings"
           mask-type="alpha"
           maskUnits="userSpaceOnUse"
           x="1"
@@ -32,8 +32,8 @@
             fill="white"
           />
         </mask>
-        <g mask="url(#mask0)">
-          <g id="&#240;&#159;&#142;&#168; Color">
+        <g mask="url(#maskSettings)">
+          <g>
             <rect id="Base" width="24" height="24" fill="#707C97" />
           </g>
         </g>
@@ -43,8 +43,7 @@
 </template>
 
 <script>
-export default {};
+  export default {};
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>

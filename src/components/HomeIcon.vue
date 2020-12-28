@@ -33,7 +33,7 @@
           />
         </mask>
         <g mask="url(#mask0)">
-          <g id="&#240;&#159;&#142;&#168; Color">
+          <g>
             <rect id="Base" width="24" height="24" fill="#707C97" />
           </g>
         </g>

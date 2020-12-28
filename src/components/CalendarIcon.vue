@@ -14,7 +14,7 @@
         fill="#231F20"
       />
       <mask
-        id="mask0"
+        id="maskCalendar"
         mask-type="alpha"
         maskUnits="userSpaceOnUse"
         x="3"
@@ -29,7 +29,7 @@
           fill="white"
         />
       </mask>
-      <g mask="url(#mask0)">
+      <g mask="url(#maskCalendar)">
         <rect width="24" height="24" fill="#707C97" />
       </g>
     </svg>
@@ -37,8 +37,7 @@
 </template>
 
 <script>
-export default {};
+  export default {};
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>

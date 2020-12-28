@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mt-1">
     <svg
       :width="width"
       :height="height"

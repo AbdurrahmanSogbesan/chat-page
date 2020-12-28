@@ -8,7 +8,7 @@
       xmlns="http://www.w3.org/2000/svg"
     >
       <mask
-        id="mask0"
+        id="maskChat"
         mask-type="alpha"
         maskUnits="userSpaceOnUse"
         x="2"
@@ -23,7 +23,7 @@
           fill="white"
         />
       </mask>
-      <g mask="url(#mask0)">
+      <g mask="url(#maskChat)">
         <rect width="24" height="24" fill="url(#paint0_linear)" />
       </g>
       <g filter="url(#filter0_dd)">
@@ -200,8 +200,7 @@
 </template>
 
 <script>
-export default {};
+  export default {};
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>
