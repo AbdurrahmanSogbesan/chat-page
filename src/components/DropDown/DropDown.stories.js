@@ -15,4 +15,5 @@ const Template = (args, { argTypes }) => ({
 
 export const Default = Template.bind({});
 Default.args = {
+  options: [{value:"Messages",text:"Messages"}]
 };

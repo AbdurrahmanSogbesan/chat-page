@@ -1,7 +1,13 @@
 <template>
   <div>
     <select name="Select" class="dropdown">
-      <option value="Messages">Messages</option>
+      <option
+        :value="option.value"
+        v-for="(option, index) in options"
+        :key="index"
+      >
+        {{ option.text }}
+      </option>
     </select>
     <ArrowIcon class="icon" />
   </div>
@@ -12,6 +18,11 @@ import ArrowIcon from "../ArrowIcon/ArrowIcon.vue";
 export default {
   components: {
     ArrowIcon,
+  },
+  props: {
+    options: {
+      type: Array,
+    },
   },
 };
 </script>
@@ -30,6 +41,7 @@ export default {
   -moz-appearance: none;
   appearance: none;
   border: none;
+  color: #707C97;
 }
 
 .icon {
