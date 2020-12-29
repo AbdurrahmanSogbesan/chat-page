@@ -5,6 +5,7 @@ export default {
   title: "MessagerInfo/MessagerInfo",
   component: MessagerInfo,
   argTypes: {
+      color: { control: "color" }
   },
 };
 
@@ -24,4 +25,5 @@ Default.args = {
         action: "writes",
     },
   ],
+  color: "#2a8bf2"
 };

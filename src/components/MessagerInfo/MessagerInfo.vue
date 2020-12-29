@@ -1,6 +1,10 @@
 <template>
   <div>
-    <div v-for="(info, index) in infos" :key="index" class="d-flex align-items-center">
+    <div
+      v-for="(info, index) in infos"
+      :key="index"
+      class="d-flex align-items-center"
+    >
       <div class="mr-20px">
         <img :src="info.src" alt="" width="54px" height="54px" />
       </div>
@@ -8,7 +12,9 @@
         <span class="name">{{ info.name }}</span>
         <div class="d-flex">
           <component :is="info.icon" class="mr-5px"></component>
-          <span class="action">{{ info.action }}</span>
+          <span class="action" :style="{ color: color }">{{
+            info.action
+          }}</span>
         </div>
       </div>
     </div>
@@ -20,6 +26,10 @@ export default {
   props: {
     infos: {
       type: Array,
+    },
+    color: {
+      type: String,
+      default: "#2a8bf2",
     },
   },
 };
@@ -37,26 +47,25 @@ export default {
   font-size: 16px;
   line-height: 19px;
   text-transform: lowercase;
-  color: #2a8bf2;
 }
 
 .d-flex {
-    display: flex;
+  display: flex;
 }
 
 .flex-column {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .align-items-center {
-    align-items: center;
+  align-items: center;
 }
 
 .mr-20px {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .mr-5px {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 </style>
