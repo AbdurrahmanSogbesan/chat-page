@@ -1,6 +1,7 @@
 <template>
   <div>
-    <input type="text" :placeholder="placeholder" class="input" />
+    <input type="text" :placeholder="placeholder" class="input" :style="{ width:
+    width }" :class="[className]" />
     <component :is="icon" class="icon"></component>
   </div>
 </template>
@@ -10,13 +11,20 @@ export default {
   props: {
     placeholder: String,
     icon: Object,
+    width: {
+      type: String,
+      default: "399px",
+    },
+    className: {
+      type: String,
+      default: "",
+    },
   },
 };
 </script>
 
 <style lang="css" scoped>
 .input {
-  width: 399px;
   height: 70px;
   line-height: 26px;
   font-size: 18px;
