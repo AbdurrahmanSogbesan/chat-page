@@ -1,0 +1,62 @@
+<template>
+  <div>
+    <div v-for="(info, index) in infos" :key="index" class="d-flex align-items-center">
+      <div class="mr-20px">
+        <img :src="info.src" alt="" width="54px" height="54px" />
+      </div>
+      <div class="d-flex flex-column">
+        <span class="name">{{ info.name }}</span>
+        <div class="d-flex">
+          <component :is="info.icon" class="mr-5px"></component>
+          <span class="action">{{ info.action }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  props: {
+    infos: {
+      type: Array,
+    },
+  },
+};
+</script>
+
+<style lang="css" scoped>
+.name {
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: capitalize;
+  color: #0d1c2e;
+}
+
+.action {
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: lowercase;
+  color: #2a8bf2;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.mr-20px {
+    margin-right: 10px;
+}
+
+.mr-5px {
+    margin-right: 5px;
+}
+</style>
