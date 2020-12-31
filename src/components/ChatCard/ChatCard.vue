@@ -6,15 +6,13 @@
     </div>
     <div class="body">
       <slot></slot>
-      <TextNumber />
+      <slot name="text-number"></slot>
     </div>
   </div>
 </template>
 
 <script>
-import TextNumber from "../TextNumber/TextNumber.vue";
 export default {
-  components: { TextNumber },
   props: {
     className: {
       type: String,

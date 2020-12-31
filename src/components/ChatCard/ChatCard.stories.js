@@ -1,6 +1,8 @@
 import ChatCard from "./ChatCard.vue";
 import MessagerInfo from "../MessagerInfo/MessagerInfo.vue";
 import WritingIcon from "../WritingIcon.vue";
+import TextNumber from "../TextNumber/TextNumber.vue";
+
 
 
 export default {
@@ -24,7 +26,7 @@ const Template = (args, { argTypes }) => ({
       },
     };
   },
-  components: { ChatCard, MessagerInfo },
+  components: { ChatCard, MessagerInfo, TextNumber },
   template: `<div style="width: 380px;">
   <ChatCard v-bind="$props">
   <div slot="header"><MessagerInfo :info="info"/>
@@ -36,6 +38,7 @@ const Template = (args, { argTypes }) => ({
     >Most of its text is made up from sections 1.10.32–3 of Cicero's De finibus bonorum et malorum (On the Boundaries of Goods and Evils; finibus may also be translated as purposes).
     </span>
   </div>
+  <div slot="text-number"><TextNumber /></div>
   </ChatCard>
   </div>`,
 });
