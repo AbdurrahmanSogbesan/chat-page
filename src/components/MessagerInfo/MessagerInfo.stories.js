@@ -17,13 +17,12 @@ const Template = (args, { argTypes }) => ({
 
 export const Default = Template.bind({});
 Default.args = {
-  infos: [
+  info:
     {
         src:"https://thumbs.dreamstime.com/b/default-avatar-profile-image-vector-social-media-user-icon-potrait-182347582.jpg",      
         name: "Luy Robin",
         icon: WritingIcon,
         action: "writes",
     },
-  ],
   color: "#2a8bf2"
 };

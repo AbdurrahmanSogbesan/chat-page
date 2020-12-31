@@ -3,8 +3,6 @@
     <div
       class="card-container"
       :style="{ background: background, color: color }"
-      v-for="(card, index) in cards"
-      :key="index"
     >
       <component :is="card.icon" class="mr-5px"></component>
       <span>{{ card.text }}</span>
@@ -15,8 +13,8 @@
 <script>
 export default {
   props: {
-    cards: {
-      type: Array,
+    card: {
+      type: Object,
     },
     background: {
       type: String,
