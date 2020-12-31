@@ -32,7 +32,7 @@ export default {
 
 <style lang="css" scoped>
 .card-container {
-  padding: 10px 13px;
+  padding: 10px 12px;
   border-radius: 25px;
   display: inline-flex;
   align-items: center;
