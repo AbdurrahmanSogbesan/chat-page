@@ -3,27 +3,30 @@
     <div class="user-details">
       <div>
         <img
-          src="https://thumbs.dreamstime.com/b/default-avatar-profile-image-vector-social-media-user-icon-potrait-182347582.jpg"
-          alt=""
-          width="54px"
-          height="54px"
-        />
+        src="https://thumbs.dreamstime.com/b/default-avatar-profile-image-vector-social-media-user-icon-potrait-182347582.jpg"
+        alt="" width="54px" height="54px" />
       </div>
       <div class="text">
         <span class="name">Nika Jerrardo</span>
         <span class="last-seen">last online 5 hours ago</span>
       </div>
     </div>
-    <div>icon 1 icon 2</div>
+    <div class="icons">
+      <Icon class="mr-20px"><AttachIcon /></Icon>
+      <Icon><MoreIcon /></Icon>
+    </div>
   </div>
 </template>
 
 <script>
+import AttachIcon from "../AttachIcon/AttachIcon.vue";
+import Icon from "../Icon/Icon.vue";
+import MoreIcon from "../MoreIcon.vue";
 export default {
-  props: {
-    person: {
-      type: Array,
-    },
+  components: {
+    Icon,
+    AttachIcon,
+    MoreIcon,
   },
 };
 </script>
@@ -62,5 +65,13 @@ export default {
   display: flex;
   flex-direction: column;
   margin-left: 20px;
+}
+
+.icons {
+  display: flex;
+}
+
+.mr-20px {
+  margin-right: 20px;
 }
 </style>

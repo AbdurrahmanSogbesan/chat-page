@@ -1,4 +1,7 @@
 import ChatHeader from "./ChatHeader.vue";
+import AttachIcon from '../AttachIcon/AttachIcon.vue';
+import Icon from "../Icon/Icon.vue";
+import MoreIcon from '../MoreIcon.vue';
 
 export default {
   title: "Chat/ChatHeader",
@@ -8,7 +11,7 @@ export default {
 
 const Template = (args, { argTypes }) => ({
   props: Object.keys(argTypes),
-  components: { ChatHeader },
+  components: { ChatHeader, Icon, AttachIcon, MoreIcon },
   template: '<ChatHeader v-bind="$props" />',
 });
 
