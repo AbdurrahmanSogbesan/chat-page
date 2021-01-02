@@ -6,7 +6,7 @@ import TextNumber from "../TextNumber/TextNumber.vue";
 
 
 export default {
-  title: "ChatCard/ChatCard",
+  title: "Chat Preview/ChatCard",
   component: ChatCard,
   argTypes: {
     time: { control: "text" },

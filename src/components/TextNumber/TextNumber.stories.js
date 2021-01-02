@@ -1,7 +1,7 @@
 import TextNumber from "./TextNumber.vue";
 
 export default {
-  title: "TextNumber/TextNumber",
+  title: "Chat Preview/TextNumber",
   component: TextNumber,
   argTypes: {
     text: { control: "number" },

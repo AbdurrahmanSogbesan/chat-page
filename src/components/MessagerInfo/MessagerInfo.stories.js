@@ -2,7 +2,7 @@ import MessagerInfo from "./MessagerInfo.vue";
 import WritingIcon from "../WritingIcon.vue";
 
 export default {
-  title: "MessagerInfo/MessagerInfo",
+  title: "Chat Preview/MessagerInfo",
   component: MessagerInfo,
   argTypes: {
       color: { control: "color" }

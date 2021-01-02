@@ -2,7 +2,7 @@ import AttachmentCard from "./AttachmentCard.vue";
 import AttachmentFileIcon from "../AttachmentFileIcon.vue";
 
 export default {
-  title: "AttachmentCard/AttachmentCard",
+  title: "Chat Preview/AttachmentCard",
   component: AttachmentCard,
   argTypes: {
     background: { control: "color" },
