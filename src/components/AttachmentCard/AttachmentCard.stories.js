@@ -18,7 +18,7 @@ const Template = (args, { argTypes }) => ({
 
 export const Default = Template.bind({});
 Default.args = {
-  cards: [{ icon: AttachmentFileIcon, text: "Files (X2)" }],
+  card: { icon: AttachmentFileIcon, text: "Files (X2)" },
   background: "rgba(42, 139, 242, 0.25)",
   color: "#2a8bf2",
 };

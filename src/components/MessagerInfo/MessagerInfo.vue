@@ -1,8 +1,6 @@
 <template>
   <div>
     <div
-      v-for="(info, index) in infos"
-      :key="index"
       class="d-flex align-items-center"
     >
       <div class="mr-20px">
@@ -24,8 +22,8 @@
 <script>
 export default {
   props: {
-    infos: {
-      type: Array,
+    info: {
+      type: Object,
     },
     color: {
       type: String,
