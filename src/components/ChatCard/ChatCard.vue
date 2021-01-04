@@ -4,9 +4,8 @@
       <slot name="header"></slot>
       <span class="time">{{ time }}</span>
     </div>
-    <div class="body">
+    <div>
       <slot></slot>
-      <slot name="text-number"></slot>
     </div>
   </div>
 </template>
@@ -45,10 +44,5 @@ export default {
   line-height: 19px;
   text-transform: lowercase;
   color: #707c97;
-}
-
-.body {
-  display: flex;
-  justify-content: space-between;
 }
 </style>

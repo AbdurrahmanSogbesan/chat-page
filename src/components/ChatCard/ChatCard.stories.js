@@ -31,14 +31,20 @@ const Template = (args, { argTypes }) => ({
   <ChatCard v-bind="$props">
   <div slot="header"><MessagerInfo :info="info"/>
   </div>
-  <div>
-    <span style="font-size: 16px;
-    line-height: 26px;
-    color: #707C97;"
-    >Most of its text is made up from sections 1.10.32–3 of Cicero's De finibus bonorum et malorum (On the Boundaries of Goods and Evils; finibus may also be translated as purposes).
-    </span>
+  <div style="display: flex; 
+  justify-content: space-between;">
+    <div>
+      <span style="font-size: 16px;
+      line-height: 26px;
+      color: #707C97;">
+      Most of its text is made up from sections 1.10.32–3 of Cicero's De finibus bonorum et malorum (On the Boundaries of Goods and Evils; finibus may also be translated as purposes).
+      </span>
+    </div>
+
+    <div>
+      <TextNumber />
+    </div>
   </div>
-  <div slot="text-number"><TextNumber /></div>
   </ChatCard>
   </div>`,
 });
