@@ -5,7 +5,14 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    iconClass: {
+      type: String,
+      default: "",
+    },
+  },
+};
 </script>
 
 <style lang="css" scoped>
@@ -25,5 +32,6 @@ export default {};
   background: #2a8bf2;
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.03),
     0px 7px 25px rgba(42, 139, 242, 0.03), 0px 5px 25px rgba(42, 139, 242, 0.07);
+  padding: 8px;
 }
 </style>

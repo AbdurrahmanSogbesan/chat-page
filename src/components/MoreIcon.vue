@@ -16,7 +16,7 @@
           fill="#231F20"
         />
         <mask
-          id="mask0"
+          id="moreicon"
           mask-type="alpha"
           maskUnits="userSpaceOnUse"
           x="10"
@@ -32,8 +32,8 @@
             fill="white"
           />
         </mask>
-        <g mask="url(#mask0)">
-          <g id="&#240;&#159;&#142;&#168; Color">
+        <g mask="url(#moreicon)">
+          <g>
             <rect id="Base" width="24" height="24" fill="#707C97" />
           </g>
         </g>

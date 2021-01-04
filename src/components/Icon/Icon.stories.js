@@ -4,7 +4,9 @@ import AttachIcon from "../AttachIcon/AttachIcon.vue";
 export default {
   title: "Icons/Icon",
   component: Icon,
-  argTypes: {},
+  argTypes: {
+    iconClass: { control: "text" },
+  },
 };
 
 const Template = (args, { argTypes }) => ({
@@ -16,4 +18,6 @@ const Template = (args, { argTypes }) => ({
 });
 
 export const Default = Template.bind({});
-Default.args = {};
+Default.args = {
+  iconClass: "",
+};
