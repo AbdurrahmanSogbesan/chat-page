@@ -45,4 +45,17 @@ export default {
   text-transform: lowercase;
   color: #707c97;
 }
+
+.bg-blue {
+  background: linear-gradient(96.78deg, #7cb8f7 0%, #2a8bf2 100%);
+  color: white !important;
+}
+
+.bg-blue .time {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.bg-blue .action {
+  color: rgba(255, 255, 255, 1) !important;
+}
 </style>

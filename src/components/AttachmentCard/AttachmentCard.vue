@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="card-container"
+      class="card-container mr-3"
       :style="{ background: background, color: color }"
     >
       <component :is="card.icon" class="mr-5px"></component>

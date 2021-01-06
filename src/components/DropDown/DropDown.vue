@@ -5,6 +5,7 @@
         :value="option.value"
         v-for="(option, index) in options"
         :key="index"
+        
       >
         {{ option.text }}
       </option>

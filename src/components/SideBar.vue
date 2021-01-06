@@ -34,10 +34,7 @@ export default {
   top: 0;
   bottom: 0;
   left: 0;
-  height: 100vh;
   width: 15%;
-  background: #fff;
-
   span {
     font-size: 18px;
   }

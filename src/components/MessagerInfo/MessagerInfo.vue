@@ -1,18 +1,14 @@
 <template>
   <div>
-    <div
-      class="d-flex align-items-center"
-    >
+    <div class="d-flex align-items-center">
       <div class="mr-20px">
-        <img :src="info.src" alt="" width="54px" height="54px" />
+        <img :src="info.src" alt="" width="54px" height="54px" class="image"/>
       </div>
       <div class="d-flex flex-column">
         <span class="name">{{ info.name }}</span>
         <div class="d-flex">
           <component :is="info.icon" class="mr-5px"></component>
-          <span class="action" :style="{ color: color }">{{
-            info.action
-          }}</span>
+          <span class="action">{{ info.action }}</span>
         </div>
       </div>
     </div>
@@ -25,15 +21,26 @@ export default {
     info: {
       type: Object,
     },
-    color: {
-      type: String,
-      default: "#2a8bf2",
-    },
   },
 };
 </script>
 
 <style lang="css" scoped>
+.image {
+  border-radius: 30px;
+}
+
+.image::before{
+   content: '';
+   display: inline-block;
+   width: 15px;
+   height: 15px;
+   -moz-border-radius: 7.5px;
+   -webkit-border-radius: 7.5px;
+   border-radius: 7.5px;
+   background-color: #69b6d5;
+}
+
 .name {
   font-size: 18px;
   line-height: 21px;
@@ -46,6 +53,7 @@ export default {
   font-size: 16px;
   line-height: 19px;
   text-transform: lowercase;
+  color: #2a8bf2;
 }
 
 .d-flex {
@@ -66,5 +74,9 @@ export default {
 
 .mr-5px {
   margin-right: 5px;
+}
+
+.bg-blue .action {
+  color: rgba(255, 255, 255, 1) !important;
 }
 </style>
