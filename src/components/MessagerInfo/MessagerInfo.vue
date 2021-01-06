@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="d-flex align-items-center">
-      <div class="mr-20px">
-        <img :src="info.src" alt="" width="54px" height="54px" class="image"/>
+      <div class="mr-20px img-container">
+        <img :src="info.src" alt="" width="54px" height="54px" class="image" />
       </div>
       <div class="d-flex flex-column">
         <span class="name">{{ info.name }}</span>
@@ -30,15 +30,14 @@ export default {
   border-radius: 30px;
 }
 
-.image::before{
-   content: '';
-   display: inline-block;
-   width: 15px;
-   height: 15px;
-   -moz-border-radius: 7.5px;
-   -webkit-border-radius: 7.5px;
-   border-radius: 7.5px;
-   background-color: #69b6d5;
+.img-container::before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  border-radius: 7.5px;
+  background-color: lightgreen;
+  position: absolute;
 }
 
 .name {
