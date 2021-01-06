@@ -36,8 +36,9 @@ export default {
   width: 13px;
   height: 13px;
   border-radius: 7.5px;
-  background-color: lightgreen;
+  background: #00c305;
   position: absolute;
+  border: 2px solid white;
 }
 
 .name {

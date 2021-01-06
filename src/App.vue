@@ -39,8 +39,9 @@
               <TextNumber :number="index + 1" />
             </div>
             <div v-else>
-              <div v-if="chat.voiceNote" class="mb-3 w-75">
-                Voice message (01:15)
+              <div v-if="chat.voiceNote" class="mb-3 w-75 d-flex">
+                <VoiceMessageIcon class="mr-2"/>
+                <span>Voice message (01:15)</span>
               </div>
               <div v-if="chat.attachments" class="d-flex">
                 <AttachmentCard
@@ -84,6 +85,7 @@ import ChatCard from "./components/ChatCard/ChatCard.vue";
 import MessagerInfo from "./components/MessagerInfo/MessagerInfo.vue";
 import AttachmentCard from "./components/AttachmentCard/AttachmentCard.vue";
 import TextNumber from "./components/TextNumber/TextNumber.vue";
+import VoiceMessageIcon from './components/VoiceMessageIcon.vue';
 
 export default {
   name: "App",
@@ -142,6 +144,7 @@ export default {
     MessagerInfo,
     AttachmentCard,
     TextNumber,
+    VoiceMessageIcon,
   },
 };
 </script>
@@ -178,6 +181,7 @@ export default {
 .w-75 {
   max-width: 80%;
   color: #707c97;
+  line-height: 26px;
 }
 
 .bg-blue .w-75 {

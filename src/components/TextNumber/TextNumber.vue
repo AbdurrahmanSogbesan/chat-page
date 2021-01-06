@@ -26,5 +26,7 @@ span {
   color: white;
   font-size: 13px;
   font-weight: bold;
+  box-shadow: 4px 4px 15px rgba(198, 27, 74, 0.05), 2px 2px 10px rgba(198, 27, 74, 0.1), 1px 1px 50px rgba(198, 27, 74, 0.15);
+
 }
 </style>
