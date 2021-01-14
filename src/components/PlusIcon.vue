@@ -32,7 +32,7 @@
           />
         </mask>
         <g mask="url(#plusicon)">
-          <g  filter="url(#filter1_dd)">
+          <g filter="url(#filter1_dd)">
             <rect id="Base" width="24" height="24" fill="white" />
           </g>
         </g>

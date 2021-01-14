@@ -16,7 +16,7 @@
           fill="#231F20"
         />
         <mask
-          id="mask0"
+          id="attachicon"
           mask-type="alpha"
           maskUnits="userSpaceOnUse"
           x="3"
@@ -32,7 +32,7 @@
             fill="white"
           />
         </mask>
-        <g mask="url(#mask0)">
+        <g mask="url(#attachicon)">
           <g>
             <path id="Base" d="M0 0H24V24H0V0Z" :fill="fill" />
           </g>
