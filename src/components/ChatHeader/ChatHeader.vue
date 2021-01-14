@@ -3,8 +3,8 @@
     <div class="user-details">
       <div>
         <img
-        src="https://thumbs.dreamstime.com/b/default-avatar-profile-image-vector-social-media-user-icon-potrait-182347582.jpg"
-        alt="" width="54px" height="54px" />
+        src="https://thumbnails.kpopmap.com/2020/02/LOONA-Profile-OliviaHye-200x200.png"
+        alt="" width="54px" height="54px" class="image"/>
       </div>
       <div class="text">
         <span class="name">Nika Jerrardo</span>
@@ -73,5 +73,9 @@ export default {
 
 .mr-20px {
   margin-right: 20px;
+}
+
+.image {
+  border-radius: 30px;
 }
 </style>

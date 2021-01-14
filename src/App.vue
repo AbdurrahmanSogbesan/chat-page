@@ -40,7 +40,7 @@
             </div>
             <div v-else>
               <div v-if="chat.voiceNote" class="mb-3 w-75 d-flex">
-                <VoiceMessageIcon class="mr-2"/>
+                <VoiceMessageIcon class="mr-2" />
                 <span>Voice message (01:15)</span>
               </div>
               <div v-if="chat.attachments" class="d-flex">
@@ -66,7 +66,107 @@
           </ChatCard>
         </div>
       </div>
-      <div class="col-7"></div>
+      <div class="col-7 d-flex flex-column">
+        <ChatHeader />
+        <div class="chat-page d-flex flex-column">
+          <div class="d-flex">
+            <img
+              src="https://thumbnails.kpopmap.com/2020/02/LOONA-Profile-OliviaHye-200x200.png"
+              alt=""
+              class="mr-4 chat-image"
+            />
+            <div class="d-flex align-items-center">
+              <MessageCard class="mr-3">
+                <span
+                  >Hello! Finally found the time to write to you) I need your
+                  help in creating interactive animations for my mobile
+                  application.
+                </span>
+              </MessageCard>
+              <MoreHorizontalIcon />
+            </div>
+          </div>
+
+          <div>
+            <div class="d-flex align-items-center">
+              <div class="mr-4 chat-image"></div>
+              <MessageCard class="mr-3">
+                <span>Can I send you files? </span>
+              </MessageCard>
+            </div>
+            <span class="text-time" style="padding-left: 182px"
+              >4 days ago</span
+            >
+          </div>
+
+          <div>
+            <div class="d-flex align-items-center justify-content-end">
+              <MoreHorizontalIcon class="mr-3" />
+              <MessageCard cardClass="white-card" class="mr-3">
+                <span>Can I send you files? </span>
+              </MessageCard>
+              <ReadIcon />
+            </div>
+            <span
+              class="text-time d-flex justify-content-end mb-2"
+              style="padding-right: 32px"
+              >4 days ago</span
+            >
+          </div>
+
+          <div>
+            <div class="d-flex">
+              <img
+                src="https://thumbnails.kpopmap.com/2020/02/LOONA-Profile-OliviaHye-200x200.png"
+                alt=""
+                class="mr-4 chat-image"
+              />
+              <div class="d-flex align-items-center">
+                <MessageCard class="mr-3">
+                  <div class="d-flex align-items-center">
+                    <div class="mr-3 file-icon">
+                      <FileIcon />
+                    </div>
+                    <div class="d-flex flex-column">
+                      <span class="mb-2">Style.zip</span>
+                      <span class="file-size">41.36 Mb</span>
+                    </div>
+                  </div>
+                </MessageCard>
+              </div>
+            </div>
+            <span class="text-time" style="padding-left: 155px"
+              >4 days ago</span
+            >
+          </div>
+
+          <div class="line"><span>3 days ago</span></div>
+
+          <div>
+            <div class="d-flex align-items-center justify-content-end">
+              <MoreHorizontalIcon class="mr-3" />
+              <MessageCard cardClass="white-card" class="mr-3">
+                <div class="d-flex flex-column">
+                  <span class="mb-2"
+                    >Hello! I tweaked everything you asked. I am sending the
+                    finished file.</span
+                  >
+
+                  <span class="zip-file d-flex"
+                    >(52.05 Mb) New_Style.zip <AttachmentFileIcon class=""
+                  /></span>
+                </div>
+              </MessageCard>
+              <UnreadIcon />
+            </div>
+            <span
+              class="text-time d-flex justify-content-end mb-2"
+              style="padding-right: 32px"
+              >3 days ago</span
+            >
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -85,7 +185,13 @@ import ChatCard from "./components/ChatCard/ChatCard.vue";
 import MessagerInfo from "./components/MessagerInfo/MessagerInfo.vue";
 import AttachmentCard from "./components/AttachmentCard/AttachmentCard.vue";
 import TextNumber from "./components/TextNumber/TextNumber.vue";
-import VoiceMessageIcon from './components/VoiceMessageIcon.vue';
+import VoiceMessageIcon from "./components/VoiceMessageIcon.vue";
+import ChatHeader from "./components/ChatHeader/ChatHeader.vue";
+import MessageCard from "./components/MessageCard/MessageCard.vue";
+import FileIcon from "./components/FileIcon.vue";
+import MoreHorizontalIcon from "./components/MoreHorizontalIcon.vue";
+import ReadIcon from "./components/ReadIcon.vue";
+import UnreadIcon from "./components/UnreadIcon.vue";
 
 export default {
   name: "App",
@@ -132,6 +238,28 @@ export default {
           className: "bg-blue",
         },
       ],
+      // texts: [
+      //   {
+      //     message:
+      //       "Hello! Finally found the time to write to you) I need your help in creating interactive animations for my mobile application.",
+      //     picture:
+      //       "https://thumbnails.kpopmap.com/2020/02/LOONA-Profile-OliviaHye-200x200.png",
+      //   },
+      //   {
+      //     message: "Can I send you files?",
+      //   },
+      //   {
+      //     picture:
+      //       "https://thumbnails.kpopmap.com/2020/02/LOONA-Profile-OliviaHye-200x200.png",
+      //     file: "",
+      //   },
+      // ],
+      // lateTexts: [
+      //   {
+      //     message:
+      //       "Hello! I tweaked everything you asked. I am sending the finished file.",
+      //   },
+      // ],
     };
   },
   components: {
@@ -145,6 +273,13 @@ export default {
     AttachmentCard,
     TextNumber,
     VoiceMessageIcon,
+    ChatHeader,
+    MessageCard,
+    FileIcon,
+    AttachmentFileIcon,
+    MoreHorizontalIcon,
+    ReadIcon,
+    UnreadIcon,
   },
 };
 </script>
@@ -186,5 +321,51 @@ export default {
 
 .bg-blue .w-75 {
   color: white;
+}
+
+.chat-page {
+  background: white;
+  padding: 30px 40px;
+}
+
+.file-icon {
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 6px;
+}
+
+.file-size {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+}
+
+.line {
+  width: 100%;
+  color: rgba(112, 124, 151, 0.7);
+  text-align: center;
+  border-bottom: 1px solid rgba(112, 124, 151, 0.15);
+  line-height: 0.1em;
+  margin: 15px 0 26px;
+
+  span {
+    background: #fff;
+    padding: 0 10px;
+    font-size: 14px;
+  }
+}
+
+.zip-file {
+  color: #2a8bf2;
+}
+
+.chat-image {
+  border-radius: 30px;
+  width: 36px;
+  height: 36px;
+}
+
+.text-time {
+  font-size: 14px;
+  color: rgba(112, 124, 151, 0.7);
 }
 </style>

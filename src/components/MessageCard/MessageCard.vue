@@ -1,14 +1,6 @@
 <template>
   <div>
-    <div
-      class="message-card"
-      :style="{
-        background: background,
-        'border-top-left-radius': topLeftRadius,
-        'border-bottom-right-radius': bottomRightRadius,
-        color: color,
-      }"
-    >
+    <div class="message-card" :class="[cardClass]">
       <slot></slot>
     </div>
   </div>
@@ -17,21 +9,9 @@
 <script>
 export default {
   props: {
-    background: {
+    cardClass: {
       type: String,
-      default: "linear-gradient(90.54deg, #60A9F6 0%, #2A8BF2 100%)",
-    },
-    topLeftRadius: {
-      type: String,
-      default: "0px",
-    },
-    bottomRightRadius: {
-      type: String,
-      default: "10px",
-    },
-    color: {
-      type: String,
-      default: "white",
+      default: "",
     },
   },
 };
@@ -45,5 +25,19 @@ export default {
     10px 10px 50px rgba(42, 139, 242, 0.1);
   border-radius: 0px 10px 10px 10px;
   width: fit-content;
+  background: linear-gradient(90.54deg, #60a9f6 0%, #2a8bf2 100%);
+  border-top-left-radius: 0px;
+  color: white;
+  margin-bottom: 15px;
+  line-height: 26px;
+  max-width: 425px;
+}
+
+.white-card {
+  background: white;
+  color: #707c97;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 0px;
+  float: right;
 }
 </style>

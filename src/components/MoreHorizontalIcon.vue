@@ -14,7 +14,7 @@
         fill="#231F20"
       />
       <mask
-        id="mask0"
+        id="morehorizontal"
         mask-type="alpha"
         maskUnits="userSpaceOnUse"
         x="3"
@@ -29,7 +29,7 @@
           fill="white"
         />
       </mask>
-      <g mask="url(#mask0)">
+      <g mask="url(#morehorizontal)">
         <rect width="24" height="24" fill="#B7BDCB" />
       </g>
     </svg>
