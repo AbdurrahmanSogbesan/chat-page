@@ -165,6 +165,30 @@
               >3 days ago</span
             >
           </div>
+
+          <div class="text-space">
+            <div class="d-flex flex-column mr-4 text-icons">
+              <Icon iconClass="blue-background" class="mb-2"
+                ><VideoIcon
+              /></Icon>
+              <Icon iconClass="blue-background" class="mb-2"
+                ><ImageIcon
+              /></Icon>
+              <Icon iconClass="blue-background" class="mb-2"><FileIcon /></Icon>
+              <Icon iconClass="blue-background" class="mb-2"><PlusIcon /></Icon>
+            </div>
+            <hr class="text-space-line" />
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="d-flex align-items-center">
+                <div class="mr-5"></div>
+                <span class="type-message">Type a message here </span>
+              </div>
+              <div class="d-flex align-items-center">
+                <SmileyIcon class="mr-3" />
+                <Icon iconClass="blue-background"><SendIcon /></Icon>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -192,6 +216,11 @@ import FileIcon from "./components/FileIcon.vue";
 import MoreHorizontalIcon from "./components/MoreHorizontalIcon.vue";
 import ReadIcon from "./components/ReadIcon.vue";
 import UnreadIcon from "./components/UnreadIcon.vue";
+import SmileyIcon from "./components/SmileyIcon.vue";
+import SendIcon from "./components/SendIcon.vue";
+import Icon from "./components/Icon/Icon.vue";
+import VideoIcon from "./components/VideoIcon.vue";
+import ImageIcon from "./components/ImageIcon.vue";
 
 export default {
   name: "App",
@@ -280,6 +309,11 @@ export default {
     MoreHorizontalIcon,
     ReadIcon,
     UnreadIcon,
+    SmileyIcon,
+    SendIcon,
+    Icon,
+    VideoIcon,
+    ImageIcon,
   },
 };
 </script>
@@ -367,5 +401,24 @@ export default {
 .text-time {
   font-size: 14px;
   color: rgba(112, 124, 151, 0.7);
+}
+
+.text-space {
+  margin-top: -64px;
+}
+
+.type-message {
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(112, 124, 151, 0.5);
+}
+
+.text-icons {
+  position: relative;
+  top: 64px;
+}
+
+.text-space-line {
+  border: 2px solid rgba(112, 124, 151, 0.15);
 }
 </style>
