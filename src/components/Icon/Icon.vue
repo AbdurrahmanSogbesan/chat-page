@@ -26,7 +26,7 @@ export default {
   border-radius: 30px;
 }
 
-.blue-bg {
+.blue-background {
   width: 40px;
   height: 40px;
   background: #2a8bf2;

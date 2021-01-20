@@ -8,7 +8,7 @@
       xmlns="http://www.w3.org/2000/svg"
     >
       <g id="Icon/Outline/image">
-        <g id="&#240;&#159;&#142;&#168; Color">
+        <g>
           <path
             id="Mask"
             fill-rule="evenodd"
@@ -17,7 +17,7 @@
             fill="white"
           />
           <mask
-            id="mask0"
+            id="imageicon"
             mask-type="alpha"
             maskUnits="userSpaceOnUse"
             x="3"
@@ -33,8 +33,8 @@
               fill="white"
             />
           </mask>
-          <g mask="url(#mask0)">
-            <g id="&#240;&#159;&#142;&#168; Color_2">
+          <g mask="url(#imageicon)">
+            <g>
               <rect id="Base" width="24" height="24" fill="white" />
             </g>
           </g>

@@ -16,7 +16,7 @@
           fill="#231F20"
         />
         <mask
-          id="mask0"
+          id="sendicon"
           mask-type="alpha"
           maskUnits="userSpaceOnUse"
           x="2"
@@ -32,8 +32,8 @@
             fill="white"
           />
         </mask>
-        <g mask="url(#mask0)">
-          <g id="&#240;&#159;&#142;&#168; Color">
+        <g mask="url(#sendicon)">
+          <g>
             <rect id="Base" x="1" width="20" height="20" fill="white" />
           </g>
         </g>

@@ -16,7 +16,7 @@
           fill="white"
         />
         <mask
-          id="mask0"
+          id="videoicon"
           mask-type="alpha"
           maskUnits="userSpaceOnUse"
           x="3"
@@ -32,8 +32,8 @@
             fill="white"
           />
         </mask>
-        <g mask="url(#mask0)">
-          <g id="&#240;&#159;&#142;&#168; Color">
+        <g mask="url(#videoicon)">
+          <g>
             <rect id="Base" width="24" height="24" fill="white" />
           </g>
         </g>
